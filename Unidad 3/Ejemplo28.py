@@ -10,8 +10,6 @@ from tkinter import *
 def obtener():
     #elementos seleccionados
     print(carrera.curselection())
-    #elementos
-    print(carrera.get(0,END))
     # carrera.delete(2,END)
     
 
@@ -35,8 +33,9 @@ carrera.insert(0,"LIN")
 
 carrera.pack()
 
-print(carrera.size())
-
+print("la cantidad de opciones es: ",carrera.size())
+#elementos
+print("las opciones son: ",carrera.get(0,END))
 
 boton1 = Button(principal, text="Obtener", bg="gray",
                 command=obtener,
