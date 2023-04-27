@@ -59,7 +59,7 @@ boton1 = Button(principal, text="Obtener", bg="gray",
                 #state=DISABLED
                 )
 
-boton1.place(x=150,y=190)
+boton1.pack()#place(x=150,y=190)
 boton1.config(pady=10,width=10)
 
 

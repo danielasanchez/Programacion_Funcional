@@ -9,7 +9,7 @@ from tkinter import *
 
 def obtener():
     print(opcion.get())
-    opcion.set(None)
+    opcion.set(0)
     etiqueta2.set("atributo hijo")
 
 def update():
