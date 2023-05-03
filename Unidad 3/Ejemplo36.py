@@ -16,6 +16,10 @@ def ventanita():
     # minsize(x,y)
     # maxsize(x,y)
     ventana.resizable(0,0)
+    # Deshabilita las otras ventanas (Modal)
+    ventana.grab_set()
+    # aparece delante de la principal
+    ventana.transient(master=principal)
     # podemos agregar widgets
     label1 = Label(ventana, text="Soy una etiqueta")
     label1.pack()
