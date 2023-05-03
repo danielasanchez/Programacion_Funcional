@@ -4,7 +4,7 @@ Created on Mon Mar 27 00:48:54 2023
 
 @author: Daniela
 """
-
+# Listbox
 from tkinter import *
 
 def obtener():

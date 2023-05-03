@@ -11,6 +11,15 @@ def obtener():
     print(opcion.get())
     opcion.set(0)
     etiqueta2.set("atributo hijo")
+    print("El nombre es",inputPadre.get())
+    print("El atributo hijo es",inputHijo.get())
+    # aqui ya empiezan a crear las instancias
+    # nombre = inputPadre.get()
+    # padecimientos = inputHijo.get()
+    # persona = Persona(nombre)
+    # paciente = Paciente(nombre,padecimientos)
+    
+    
 
 def update():
     clase = opcion.get()
@@ -21,11 +30,11 @@ def update():
         input1.focus_set()
         
     elif clase==2:
-        etiqueta2.set("Padecimientos")
+        etiqueta2.set("Especialidad")
         input2.config(state= "normal")
         inputHijo.set("")
     elif clase == 3:
-        etiqueta2.set("Especialidad")
+        etiqueta2.set("Padecimientos")
         input2.config(state= "normal")
         inputHijo.set("")
     

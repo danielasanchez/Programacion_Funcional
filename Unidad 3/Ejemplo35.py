@@ -4,7 +4,7 @@ Created on Mon Mar 27 00:48:54 2023
 
 @author: Daniela
 """
-#grid
+#frame
 
 from tkinter import *
 
@@ -21,8 +21,6 @@ frame1.place(x=0,y=0, relwidth=0.8, relheight=0.5, )
 frame2 = Frame(principal, bg="red")
 #rel = valores entre 0 y 1
 frame2.place(relx=0.8,rely=0.5, relwidth=0.2, relheight=0.5)
-
-
 
 label1 = Label(frame1, text="Soy una etiqueta")
 label1.pack()
