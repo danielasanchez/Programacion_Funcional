@@ -4,7 +4,8 @@ Created on Mon Mar 27 00:48:54 2023
 
 @author: Daniela
 """
-#place
+#Pack
+
 
 from tkinter import *
 
@@ -16,14 +17,13 @@ principal.config(bg="gray")
 
 
 label1 = Label(principal, text="Soy una etiqueta")
-# x,y = pixeles
-label1.place(x=10,y=50, width=100, height=40)
+# side = TOP, BOTTOM, LEFT o RIGHT
+# fill = X, Y o BOTH
+# expand = TRUE
+label1.pack(side=BOTTOM,fill=X,pady=5)
 
 label2 = Label(principal, text="Soy otra etiqueta")
-label2.place(x=340,y=100, width=100, height=40, anchor=SE)
-
-
-
+label2.pack(side=BOTTOM,fill=X,pady=5)
 
 principal.mainloop()
 

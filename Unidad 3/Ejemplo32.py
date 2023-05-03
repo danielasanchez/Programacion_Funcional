@@ -4,7 +4,7 @@ Created on Mon Mar 27 00:48:54 2023
 
 @author: Daniela
 """
-#grid
+#place
 
 from tkinter import *
 
@@ -17,14 +17,12 @@ principal.config(bg="gray")
 
 label1 = Label(principal, text="Soy una etiqueta")
 # relx, rely = eslaca del 0 al 1
-label1.grid(row=0,column=0)
+label1.place(relx=0.5,rely=0.7)
 
 label2 = Label(principal, text="Soy otra etiqueta")
-label2.grid(row=1,column=1)
+label2.place(relx=0.5,rely=0.8,relwidth=0.4,relheight=0.1)
 
 
-label3 = Label(principal, text="Soy otra etiqueta")
-label3.grid(row=2,column=2)
 
 
 principal.mainloop()
