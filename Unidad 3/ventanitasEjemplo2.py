@@ -155,6 +155,12 @@ def ventanitaFiltro(principal):
 #se le asigna None por default para poder utilizar la misma ventada
 #donde posiblemente no se tenga ese dato.
 def ventanitaRegistro(ventanaAnterior,objeto=None):
+    
+    if objeto == None:
+        estado = NORMAL
+    else:
+        estado = DISABLED
+        
     # revisar propiedades de bg, bd, etc.
     ventana = Toplevel(ventanaAnterior)
     ventana.title("Registro")
@@ -202,7 +208,7 @@ def ventanitaRegistro(ventanaAnterior,objeto=None):
     
     input1 = Entry(frame1, highlightthickness=4, highlightcolor="blue",
                selectbackground="pink", selectforeground = "green",
-               textvariable=idmascota)
+               textvariable=idmascota, state=estado)
     input1.grid(row=1, column=2)
     
     
